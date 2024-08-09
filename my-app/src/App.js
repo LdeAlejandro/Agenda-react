@@ -1,4 +1,4 @@
-import Agenda from "./Agenda Assets/Agenda";
+import Agenda from "./agendaAssets/Agenda";
 
 function App() {
   return (

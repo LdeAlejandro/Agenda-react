@@ -1,0 +1,17 @@
+.thank-you-message {
+    align-content: center;
+    text-align: center;
+    font: normal normal bold 16px/18px Segoe UI;
+    letter-spacing: 0px;
+    color: red;
+    display: inline;
+    background-color: white;
+    width: 60%;
+    height: 25px;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.thank-you-message-hidden {
+    display: none;
+}
