@@ -9,8 +9,7 @@ const CadastrarContatoWrap = () => {
 
     setData({ [name]: value });
 
-    console.log(data);
-  }
+}
 
   return (
     <div>
