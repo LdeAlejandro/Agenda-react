@@ -18,7 +18,7 @@ const AgendaApp = () => {
     <div>
       {showButton && (
         
-          <Link to="/+"><button>+</button></Link>
+          <Link to="/+"><button>Adicionar Contato</button></Link>
       )}
 
       <Routes>

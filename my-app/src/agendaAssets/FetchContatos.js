@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
-export function FetchContatos() {
+
+export function FetchContatos({}) {
 
     const [data, setData] = useState([]);
     const [updateContatos, setUpdateContatos] = useState(false);
     const [filteredData, setFilteredData] = useState([]);
+
+    const navigate = useNavigate();
 
     const API_URL = "http://localhost:3000/contatos";
 
@@ -75,7 +78,7 @@ function handleOnChange(event){
         <h3>{contato.nome}</h3>
         <p>{contato.telefone}</p>
         <p>{contato.email}</p>
-        <button><Link to="/editarcontato">Editar</Link></button> <button value={contato.id} onClick={() => handleClick(contato.id)}>Apagar</button>
+        <button onClick={ () => navigate("/editarcontato", {state: contato})}>Editar</button> <button value={contato.id} onClick={() => handleClick(contato.id)}>Apagar</button>
     </li>
 ))}
 </div>
